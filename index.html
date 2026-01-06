@@ -4,6 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño de Almacenes Logísticos</title>
+
+    <style>
+        :root {
+            --principal: #1f4fd8;
+            --secundario: #00b4d8;
+            --fondo: #f4f7fb;
+            --texto: #333;
+            --blanco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: var(--fondo);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, var(--principal), var(--secundario));
+            color: var(--blanco);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: var(--principal);
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        /* INICIO */
+        #inicio p {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        #inicio img {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        /* BOTONES */
+        button {
+            background-color: var(--principal);
+            color: var(--blanco);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: var(--secundario);
+            transform: scale(1.05);
+        }
+
+        /* SERVICIOS */
+        #servicios {
+            background-color: var(--blanco);
+        }
+
+        #servicios article {
+            background: var(--fondo);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        #servicios img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        /* PROYECTOS */
+        #proyectos ul {
+            max-width: 600px;
+            margin: auto;
+            list-style: none;
+        }
+
+        #proyectos li {
+            background: var(--blanco);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid var(--principal);
+            border-radius: 5px;
+        }
+
+        /* CONTACTO */
+        #contacto {
+            background: linear-gradient(135deg, var(--secundario), var(--principal));
+            color: var(--blanco);
+            text-align: center;
+        }
+
+        #contacto button {
+            margin: 10px;
+            background-color: var(--blanco);
+            color: var(--principal);
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #111;
+            color: var(--blanco);
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 40px 5%;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -13,14 +177,12 @@
         <p>Optimización de layouts, flujos y operaciones</p>
 
         <nav>
-            <a href="#inicio">Inicio</a> |
-            <a href="#servicios">Servicios</a> |
-            <a href="#proyectos">Proyectos</a> |
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
-
-    <hr>
 
     <!-- INICIO -->
     <section id="inicio">
@@ -39,98 +201,53 @@
         <p>
             El diseño de almacenes bien planificado impacta directamente en los costos,
             los tiempos de operación y la seguridad del personal.
-            Mi enfoque busca crear soluciones funcionales, escalables y alineadas
-            a las necesidades reales del transporte y la logística moderna.
         </p>
 
         <img src="img/almacen-principal.jpg" alt="Diseño de almacén logístico">
 
-        <br><br>
-        <button>Conocer más</button>
+        <div style="text-align:center;">
+            <button>Conocer más</button>
+        </div>
     </section>
-
-    <hr>
 
     <!-- SERVICIOS -->
     <section id="servicios">
         <h2>Áreas de especialización</h2>
 
         <article>
-            <h3>Diseño de Layouts de Almacén</h3>
-            <p>
-                Desarrollo de layouts eficientes considerando flujos de materiales,
-                picking, surtido, seguridad y crecimiento futuro.
-            </p>
+            <h3>Diseño de Layouts</h3>
+            <p>Desarrollo de layouts eficientes considerando flujos y crecimiento futuro.</p>
             <img src="img/layout-almacen.jpg" alt="Layout de almacén">
-            <br>
             <button>Ver detalles</button>
         </article>
 
         <article>
-            <h3>Optimización de Operaciones</h3>
-            <p>
-                Análisis y mejora de procesos logísticos para reducir tiempos,
-                costos y recorridos innecesarios dentro del almacén.
-            </p>
+            <h3>Optimización Operativa</h3>
+            <p>Mejora de procesos para reducir tiempos, recorridos y costos.</p>
             <img src="img/optimizacion.jpg" alt="Optimización logística">
-            <br>
             <button>Ver detalles</button>
         </article>
 
         <article>
-            <h3>Simulación y Planeación</h3>
-            <p>
-                Planeación de capacidades, simulación de escenarios
-                y validación de propuestas antes de su implementación.
-            </p>
+            <h3>Planeación y Simulación</h3>
+            <p>Evaluación de escenarios antes de su implementación.</p>
             <img src="img/simulacion.jpg" alt="Simulación de almacén">
-            <br>
             <button>Ver detalles</button>
         </article>
     </section>
-
-    <hr>
 
     <!-- PROYECTOS -->
     <section id="proyectos">
         <h2>Ejemplos de proyectos</h2>
-
-        <p>
-            Algunos proyectos incluyen diseño de almacenes de refacciones,
-            centros de distribución y áreas de cross-dock.
-        </p>
-
         <ul>
             <li>Centro de distribución automotriz</li>
             <li>Almacén de refacciones a nivel pieza</li>
-            <li>Optimización de rutas internas de picking</li>
+            <li>Optimización de picking y surtido</li>
         </ul>
-
-        <button>Ver portafolio</button>
     </section>
-
-    <hr>
 
     <!-- CONTACTO -->
     <section id="contacto">
         <h2>Contacto</h2>
-
-        <p>
-            ¿Buscas mejorar la eficiencia de tu almacén?
-            Ponte en contacto para analizar tu proyecto.
-        </p>
-
-        <button>Enviar mensaje</button>
-        <button>Solicitar diagnóstico</button>
-    </section>
-
-    <hr>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 | Diseño de Almacenes Logísticos</p>
-    </footer>
-
-</body>
-</html>
+        <p>¿Buscas mejorar la eficiencia de tu almacén?</p>
 
