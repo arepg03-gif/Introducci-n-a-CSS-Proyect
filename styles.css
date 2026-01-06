@@ -1,76 +1,131 @@
-/* ===============================
-   VARIABLES GENERALES
-================================ */
-:root {
-    --color-primario: #1f4e79;
-    --color-secundario: #f2f6fa;
-    --color-acento: #2e86c1;
-    --color-texto: #333;
-    --color-blanco: #ffffff;
-    --sombra: 0 4px 12px rgba(0,0,0,0.1);
-    --radio: 10px;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Almacenes Logísticos</title>
 
-/* ===============================
-   ESTILOS GENERALES
-================================ */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: var(--color-secundario);
-    color: var(--color-texto);
-    line-height: 1.6;
-}
+    <style>
+        :root {
+            --principal: #1f4fd8;
+            --secundario: #00b4d8;
+            --fondo: #f4f7fb;
+            --texto: #333;
+            --blanco: #ffffff;
+        }
 
-section {
-    padding: 3rem 1.5rem;
-    max-width: 1200px;
-    margin: auto;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-/* ===============================
-   SECCIÓN INICIO
-================================ */
-#inicio p {
-    text-align: center;
-    margin-bottom: 1rem;
-}
+        body {
+            background-color: var(--fondo);
+            color: var(--texto);
+            line-height: 1.6;
+        }
 
-#inicio strong {
-    font-size: 1.3rem;
-    color: var(--color-primario);
-}
+        header {
+            background: linear-gradient(135deg, var(--principal), var(--secundario));
+            color: var(--blanco);
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-.frase {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: var(--color-acento);
-}
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
 
-.impacto {
-    margin-top: 2rem;
-    background-color: var(--color-blanco);
-    padding: 1.5rem;
-    border-radius: var(--radio);
-    box-shadow: var(--sombra);
-    text-align: center;
-}
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
 
-/* ===============================
-   SERVICIOS / ÁREAS
-================================ */
-#servicios h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-primario);
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-.areas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.2rem;
-    margin-bottom: 2rem;
-}
+        section {
+            padding: 60px 10%;
+        }
 
-.area-item {
-    background-color: var(-
+        section h2 {
+            text-align: center;
+            color: var(--principal);
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        #inicio p {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        #inicio img {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: var(--principal);
+            color: var(--blanco);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--secundario);
+        }
+
+        /* SERVICIOS */
+        #servicios {
+            background-color: var(--blanco);
+        }
+
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--fondo);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* PROYECTOS */
+        #proyectos ul {
+            max-width: 600px;
+            margin: auto;
+            list-style: none;
+        }
+
+        #proyectos li {
+            background: var(--blanco);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid var(--principal);
+            border-radius: 5px;
+
+
