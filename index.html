@@ -2,252 +2,183 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño de Almacenes Logísticos</title>
-
-    <style>
-        :root {
-            --principal: #1f4fd8;
-            --secundario: #00b4d8;
-            --fondo: #f4f7fb;
-            --texto: #333;
-            --blanco: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            background-color: var(--fondo);
-            color: var(--texto);
-            line-height: 1.6;
-        }
-
-        /* HEADER */
-        header {
-            background: linear-gradient(135deg, var(--principal), var(--secundario));
-            color: var(--blanco);
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            margin-bottom: 15px;
-        }
-
-        nav a {
-            color: var(--blanco);
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* SECCIONES */
-        section {
-            padding: 60px 10%;
-        }
-
-        section h2 {
-            text-align: center;
-            color: var(--principal);
-            margin-bottom: 30px;
-            font-size: 2rem;
-        }
-
-        /* INICIO */
-        #inicio p {
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        #inicio img {
-            width: 100%;
-            max-width: 800px;
-            display: block;
-            margin: 30px auto;
-            border-radius: 10px;
-        }
-
-        /* BOTONES */
-        button {
-            background-color: var(--principal);
-            color: var(--blanco);
-            border: none;
-            padding: 12px 25px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        button:hover {
-            background-color: var(--secundario);
-            transform: scale(1.05);
-        }
-
-        /* SERVICIOS */
-        #servicios {
-            background-color: var(--blanco);
-        }
-
-        #servicios article {
-            background: var(--fondo);
-            padding: 25px;
-            margin-bottom: 30px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        #servicios img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 10px;
-            margin: 15px auto;
-            display: block;
-        }
-
-        /* PROYECTOS */
-        #proyectos ul {
-            max-width: 600px;
-            margin: auto;
-            list-style: none;
-        }
-
-        #proyectos li {
-            background: var(--blanco);
-            padding: 15px;
-            margin-bottom: 10px;
-            border-left: 5px solid var(--principal);
-            border-radius: 5px;
-        }
-
-        /* CONTACTO */
-        #contacto {
-            background: linear-gradient(135deg, var(--secundario), var(--principal));
-            color: var(--blanco);
-            text-align: center;
-        }
-
-        #contacto button {
-            margin: 10px;
-            background-color: var(--blanco);
-            color: var(--principal);
-            font-weight: bold;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #111;
-            color: var(--blanco);
-            text-align: center;
-            padding: 15px;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            section {
-                padding: 40px 5%;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Diseño de Almacenes Logísticos</h1>
-        <p>Optimización de layouts, flujos y operaciones</p>
+<header class="header">
+    <h1>Diseño de Almacenes Logísticos</h1>
+    <p>Layouts eficientes, flujos óptimos y operaciones seguras</p>
+</header>
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
+<nav class="menu">
+    <a href="#sobre-mi">🏗️ Sobre mí</a>
+    <a href="#servicios">📦 Servicios</a>
+    <a href="#areas">🧠 Especialización</a>
+    <a href="#portafolio">🏭 Proyectos</a>
+    <a href="#contacto">✉️ Contacto</a>
+</nav>
 
-    <!-- INICIO -->
-    <section id="inicio">
-        <h2>Sobre mi trabajo</h2>
+<!-- SOBRE MI -->
+<section id="sobre-mi" class="section sobre-mi">
+    <h2>Sobre mí</h2>
 
-        <p><strong>
-            Especialista en diseño de almacenes logísticos y optimización de operativas
-            en la industria del autotransporte, la movilidad y la logística.
-        </strong></p>
+    <img src="img/disenador-almacenes.jpg" alt="Diseñador de almacenes logísticos">
 
-        <p>
-            Transformo espacios en flujos logísticos eficientes.
-            Diseño layouts que conectan operación, seguridad y productividad.
-        </p>
+    <p><strong>
+        Especialista en diseño de almacenes logísticos y optimización de operaciones
+        dentro de la industria del transporte, la movilidad y la logística.
+    </strong></p>
 
-        <p>
-            El diseño de almacenes bien planificado impacta directamente en los costos,
-            los tiempos de operación y la seguridad del personal.
-        </p>
+    <p><strong>
+        Experiencia en análisis de flujos, layout de almacenes, zonas de picking,
+        surtido, almacenamiento y despacho, enfocado en productividad, seguridad
+        y escalabilidad operativa.
+    </strong></p>
 
-        <img src="img/almacen-principal.jpg" alt="Diseño de almacén logístico">
+    <p class="frase">
+        Transformo espacios en flujos logísticos eficientes.
+    </p>
 
-        <div style="text-align:center;">
-            <button>Conocer más</button>
+    <p class="impacto">
+        Un buen diseño de almacén impacta directamente en costos, tiempos de operación
+        y seguridad del personal.
+    </p>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="section">
+    <h2>Servicios</h2>
+
+    <div class="servicios-grid">
+        <div class="servicio">📐 <strong>Diseño de layouts</strong></div>
+        <div class="servicio">🔄 <strong>Optimización de flujos</strong></div>
+        <div class="servicio">📊 <strong>Análisis de capacidad</strong></div>
+        <div class="servicio">🛠️ <strong>Mejora de procesos</strong></div>
+    </div>
+</section>
+
+<!-- ÁREAS -->
+<section id="areas" class="section areas">
+    <h2>Áreas de especialización</h2>
+
+    <div class="areas-grid">
+
+        <details>
+            <summary>📦 Diseño de Almacenes</summary>
+            <p>Distribución eficiente de racks, pasillos, zonas de picking y surtido.</p>
+        </details>
+
+        <details>
+            <summary>🚚 Flujos Logísticos</summary>
+            <p>Análisis de recorridos, entradas, salidas y movimiento de materiales.</p>
+        </details>
+
+        <details>
+            <summary>📐 Layout y Zonificación</summary>
+            <p>Definición de áreas de almacenamiento, cross-dock, staging y despacho.</p>
+        </details>
+
+        <details>
+            <summary>⚙️ Optimización Operativa</summary>
+            <p>Reducción de tiempos muertos, recorridos innecesarios y cuellos de botella.</p>
+        </details>
+
+        <details>
+            <summary>📊 Análisis de Capacidad</summary>
+            <p>Evaluación de crecimiento, volumen y necesidades futuras.</p>
+        </details>
+
+        <details>
+            <summary>🛡️ Seguridad Industrial</summary>
+            <p>Diseño enfocado en operación segura y cumplimiento normativo.</p>
+        </details>
+
+        <details>
+            <summary>🧠 Planeación Logística</summary>
+            <p>Soluciones alineadas a la estrategia operativa del negocio.</p>
+        </details>
+
+        <details>
+            <summary>🏭 Logística y Transporte</summary>
+            <p>Integración del almacén con operaciones de transporte y distribución.</p>
+        </details>
+
+    </div>
+</section>
+
+<!-- PORTAFOLIO -->
+<section id="portafolio" class="section portafolio-section">
+    <h2>Proyectos de Almacenes</h2>
+    <p class="subtitulo">Ejemplos de diseños y optimizaciones realizadas</p>
+
+    <div class="portafolio-grid">
+        <div class="portfolio-item">
+            <h3>Centro de Distribución</h3>
+            <img src="img/centro-distribucion.png" alt="Centro de distribución">
         </div>
-    </section>
 
-    <!-- SERVICIOS -->
-    <section id="servicios">
-        <h2>Áreas de especialización</h2>
+        <div class="portfolio-item">
+            <h3>Almacén de Refacciones</h3>
+            <img src="img/almacen-refacciones.png" alt="Almacén de refacciones">
+        </div>
 
-        <article>
-            <h3>Diseño de Layouts</h3>
-            <p>Desarrollo de layouts eficientes considerando flujos y crecimiento futuro.</p>
-            <img src="img/layout-almacen.jpg" alt="Layout de almacén">
-            <button>Ver detalles</button>
-        </article>
+        <div class="portfolio-item">
+            <h3>Optimización de Picking</h3>
+            <img src="img/picking.png" alt="Picking en almacén">
+        </div>
 
-        <article>
-            <h3>Optimización Operativa</h3>
-            <p>Mejora de procesos para reducir tiempos, recorridos y costos.</p>
-            <img src="img/optimizacion.jpg" alt="Optimización logística">
-            <button>Ver detalles</button>
-        </article>
+        <div class="portfolio-item">
+            <h3>Layout Logístico</h3>
+            <img src="img/layout-logistico.png" alt="Layout logístico">
+        </div>
+    </div>
+</section>
 
-        <article>
-            <h3>Planeación y Simulación</h3>
-            <p>Evaluación de escenarios antes de su implementación.</p>
-            <img src="img/simulacion.jpg" alt="Simulación de almacén">
-            <button>Ver detalles</button>
-        </article>
-    </section>
+<!-- CONTACTO -->
+<section id="contacto" class="section contacto">
+    <h2>Contacto</h2>
 
-    <!-- PROYECTOS -->
-    <section id="proyectos">
-        <h2>Ejemplos de proyectos</h2>
-        <ul>
-            <li>Centro de distribución automotriz</li>
-            <li>Almacén de refacciones a nivel pieza</li>
-            <li>Optimización de picking y surtido</li>
-        </ul>
-    </section>
+    <form action="https://formspree.io/f/xbdrygbq" method="POST" class="formulario">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
 
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Buscas mejorar la eficiencia de tu almacén?</p>
+        <textarea name="mensaje" rows="4" placeholder="Cuéntame sobre tu almacén o proyecto"></textarea>
+
+        <input type="hidden" name="_subject" value="Nuevo contacto – Diseño de Almacenes">
+
+        <button type="submit">Enviar solicitud</button>
+
+        <p class="form-nota">
+            Tu información se enviará de forma segura.
+        </p>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>©️ 2025 | Diseño de Almacenes Logísticos</p>
+</footer>
+
+<!-- SCRIPT ACORDEÓN -->
+<script>
+    const detailsElements = document.querySelectorAll('.areas-grid details');
+
+    detailsElements.forEach(detail => {
+        detail.addEventListener('toggle', () => {
+            if (detail.open) {
+                detailsElements.forEach(other => {
+                    if (other !== detail) {
+                        other.removeAttribute('open');
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
+
 
