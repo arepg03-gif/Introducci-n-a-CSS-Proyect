@@ -1,8 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 body {
@@ -38,26 +37,27 @@ body {
     font-weight: bold;
 }
 
-.sobre-mi img {
-    max-width: 300px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-.flex-servicios {
+.flex-servicios,
+.flex-portafolio {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.servicio {
+.servicio,
+.portfolio-item {
     background: #e2e8f0;
     padding: 20px;
     border-radius: 10px;
     min-width: 220px;
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.servicio:hover,
+.portfolio-item:hover {
+    transform: scale(1.05);
 }
 
 .flex-areas {
@@ -73,22 +73,16 @@ body {
     border-radius: 8px;
 }
 
-.flex-portafolio {
+.metricas-flex {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.portfolio-item {
-    flex: 1 1 250px;
-    max-width: 300px;
+    justify-content: space-around;
     text-align: center;
+    gap: 20px;
 }
 
-.portfolio-item img {
-    width: 100%;
-    border-radius: 10px;
+.metrica h3 {
+    font-size: 2rem;
+    color: #0f172a;
 }
 
 .flex-form {
@@ -104,17 +98,12 @@ body {
     padding: 10px;
 }
 
-button {
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
     background: #0f172a;
     color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+    padding: 20px;
 }
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: #0f172a;
-    color: white;
-}
+
