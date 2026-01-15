@@ -1,36 +1,33 @@
+/* RESET */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    margin: 0;
 }
 
+/* GENERAL */
 body {
     background: #f8fafc;
     color: #1e293b;
 }
 
-/* ---------- BASE ---------- */
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* HEADER */
 .header {
     text-align: center;
-    padding: 40px;
     background: #0f172a;
     color: white;
+    padding: 40px 20px;
 }
 
-.banner-responsive {
-    display: none;
-    background: #e2e8f0;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9rem;
-}
-
-.nav-sticky {
-    position: sticky;
-    top: 0;
-}
-
-.flex-menu {
+/* NAV */
+.menu {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -38,33 +35,74 @@ body {
     padding: 15px;
 }
 
-.flex-menu a {
+.menu a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.section {
-    padding: 40px;
-    max-width: 1100px;
-    margin: auto;
+.nav-sticky {
+    position: sticky;
+    top: 0;
 }
 
-.flex-servicios,
-.metricas-flex {
+/* SOBRE MI */
+.sobre-mi-flex {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.sobre-mi img {
+    max-width: 280px;
+    border-radius: 10px;
+}
+
+/* SERVICIOS */
+.servicios-flex {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .servicio {
+    flex: 1 1 220px;
     background: #e2e8f0;
-    padding: 30px;
+    padding: 20px;
+    text-align: center;
     border-radius: 10px;
-    min-width: 220px;
+}
+
+/* ÁREAS */
+.areas-flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.area {
+    flex: 1 1 220px;
+    background: #e2e8f0;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
 }
 
-.flex-form {
+/* MÉTRICAS */
+.metricas-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.metrica h3 {
+    font-size: 2rem;
+    color: #0f172a;
+}
+
+/* FORMULARIO */
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -72,83 +110,69 @@ body {
     margin: auto;
 }
 
-.btn-fixed {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #0f172a;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
+.formulario input,
+.formulario textarea {
+    padding: 10px;
 }
 
-.footer-flex {
-    display: flex;
-    justify-content: space-around;
+.formulario button {
     background: #0f172a;
     color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
     padding: 20px;
 }
 
-.texto-movil {
-    display: none;
-}
+/* ================= RESPONSIVE ================= */
 
-/* ---------- TABLET ---------- */
+/* TABLET */
 @media (max-width: 1024px) {
-    .flex-servicios,
+    .sobre-mi-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .metricas-flex {
         flex-wrap: wrap;
     }
 }
 
-/* ---------- MÓVIL ---------- */
+/* MÓVIL */
 @media (max-width: 768px) {
-    .banner-responsive {
-        display: block;
-    }
-
-    .flex-menu {
+    .menu {
         flex-direction: column;
         align-items: center;
     }
 
-    .flex-servicios,
+    .servicios-flex,
+    .areas-flex,
     .metricas-flex {
         flex-direction: column;
-        align-items: center;
     }
 
-    .footer-flex {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .texto-desktop {
-        display: none;
-    }
-
-    .texto-movil {
-        display: block;
+    .section {
+        padding: 30px 15px;
     }
 }
 
-/* ---------- MÓVIL PEQUEÑO ---------- */
+/* MÓVIL PEQUEÑO */
 @media (max-width: 480px) {
     .header h1 {
         font-size: 1.5rem;
     }
 
-    .servicio {
-        padding: 20px;
-        font-size: 0.9rem;
-    }
-
-    .btn-fixed {
-        padding: 10px;
-        font-size: 1rem;
+    .metrica h3 {
+        font-size: 1.5rem;
     }
 }
+
+
 
