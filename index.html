@@ -13,7 +13,11 @@
     <p>Layouts eficientes, flujos óptimos y operaciones seguras</p>
 </header>
 
-<!-- NAV STICKY -->
+<!-- BANNER RESPONSIVE -->
+<div class="banner-responsive">
+    📱 Estás visualizando el sitio en un dispositivo móvil
+</div>
+
 <nav class="menu flex-menu nav-sticky">
     <a href="#sobre-mi">Sobre mí</a>
     <a href="#servicios">Servicios</a>
@@ -26,33 +30,20 @@
 <section id="sobre-mi" class="section sobre-mi">
     <h2>Sobre mí</h2>
     <img src="img/disenador-almacenes.jpg" alt="Diseñador de almacenes">
-    <p><strong>Especialista en diseño y optimización de almacenes logísticos.</strong></p>
+    <p class="texto-desktop">
+        Especialista en diseño y optimización de almacenes logísticos.
+    </p>
+    <p class="texto-movil">
+        Especialista en logística.
+    </p>
 </section>
 
 <section id="servicios" class="section">
     <h2>Servicios</h2>
-
     <div class="servicios-grid flex-servicios">
-        <div class="servicio servicio-pos">
-            Diseño de Layouts
-            <span class="badge">TOP</span>
-        </div>
-        <div class="servicio servicio-pos">
-            Optimización de Flujos
-            <span class="badge">+</span>
-        </div>
-        <div class="servicio servicio-pos">
-            Análisis de Capacidad
-            <span class="badge">NEW</span>
-        </div>
-    </div>
-</section>
-
-<section id="areas" class="section">
-    <h2>Áreas de Especialización</h2>
-    <div class="areas-grid flex-areas">
-        <details><summary>Diseño de Almacenes</summary><p>Racks y picking.</p></details>
-        <details><summary>Flujos Logísticos</summary><p>Entradas y salidas.</p></details>
+        <div class="servicio servicio-pos">Diseño de Layouts</div>
+        <div class="servicio servicio-pos">Optimización de Flujos</div>
+        <div class="servicio servicio-pos">Análisis de Capacidad</div>
     </div>
 </section>
 
@@ -62,20 +53,6 @@
         <div class="metrica">+30% Productividad</div>
         <div class="metrica">-20% Costos</div>
         <div class="metrica">+40% Flujo</div>
-    </div>
-</section>
-
-<section id="portafolio" class="section">
-    <h2>Proyectos</h2>
-    <div class="portafolio-grid flex-portafolio">
-        <div class="portfolio-item pos-relative">
-            <img src="img/centro-distribucion.png">
-            <div class="etiqueta">CD</div>
-        </div>
-        <div class="portfolio-item pos-relative">
-            <img src="img/picking.png">
-            <div class="etiqueta">Picking</div>
-        </div>
     </div>
 </section>
 
@@ -89,14 +66,14 @@
     </form>
 </section>
 
-<!-- BOTÓN FIXED -->
 <a href="#contacto" class="btn-fixed">✉️</a>
 
 <footer class="footer footer-flex">
     <div>© 2025</div>
     <div>Diseño de Almacenes</div>
-    <div>Contacto Profesional</div>
+    <div class="footer-extra">Versión Responsive</div>
 </footer>
 
 </body>
 </html>
+
