@@ -13,67 +13,80 @@
     <p>Layouts eficientes, flujos óptimos y operaciones seguras</p>
 </header>
 
-<!-- BANNER RESPONSIVE -->
-<div class="banner-responsive">
-    📱 Estás visualizando el sitio en un dispositivo móvil
-</div>
-
-<nav class="menu flex-menu nav-sticky">
+<nav class="menu nav-sticky">
     <a href="#sobre-mi">Sobre mí</a>
     <a href="#servicios">Servicios</a>
     <a href="#areas">Especialización</a>
     <a href="#metricas">Métricas</a>
-    <a href="#portafolio">Proyectos</a>
     <a href="#contacto">Contacto</a>
 </nav>
 
 <section id="sobre-mi" class="section sobre-mi">
-    <h2>Sobre mí</h2>
-    <img src="img/disenador-almacenes.jpg" alt="Diseñador de almacenes">
-    <p class="texto-desktop">
-        Especialista en diseño y optimización de almacenes logísticos.
-    </p>
-    <p class="texto-movil">
-        Especialista en logística.
-    </p>
+    <div class="sobre-mi-flex">
+        <img src="img/disenador-almacenes.jpg" alt="Diseñador de almacenes">
+        <div>
+            <h2>Sobre mí</h2>
+            <p>
+                Especialista en diseño y optimización de almacenes logísticos,
+                enfocado en eficiencia operativa, seguridad y crecimiento.
+            </p>
+        </div>
+    </div>
 </section>
 
 <section id="servicios" class="section">
     <h2>Servicios</h2>
-    <div class="servicios-grid flex-servicios">
-        <div class="servicio servicio-pos">Diseño de Layouts</div>
-        <div class="servicio servicio-pos">Optimización de Flujos</div>
-        <div class="servicio servicio-pos">Análisis de Capacidad</div>
+    <div class="servicios-flex">
+        <div class="servicio">Diseño de Layouts</div>
+        <div class="servicio">Optimización de Flujos</div>
+        <div class="servicio">Análisis de Capacidad</div>
+        <div class="servicio">Mejora de Procesos</div>
+    </div>
+</section>
+
+<section id="areas" class="section">
+    <h2>Áreas de Especialización</h2>
+    <div class="areas-flex">
+        <div class="area">Diseño de Almacenes</div>
+        <div class="area">Flujos Logísticos</div>
+        <div class="area">Layout y Zonificación</div>
+        <div class="area">Seguridad Industrial</div>
     </div>
 </section>
 
 <section id="metricas" class="section metricas">
     <h2>Impacto Operativo</h2>
     <div class="metricas-flex">
-        <div class="metrica">+30% Productividad</div>
-        <div class="metrica">-20% Costos</div>
-        <div class="metrica">+40% Flujo</div>
+        <div class="metrica">
+            <h3>+30%</h3>
+            <p>Productividad</p>
+        </div>
+        <div class="metrica">
+            <h3>-20%</h3>
+            <p>Costos</p>
+        </div>
+        <div class="metrica">
+            <h3>+40%</h3>
+            <p>Eficiencia</p>
+        </div>
     </div>
 </section>
 
 <section id="contacto" class="section contacto">
     <h2>Contacto</h2>
-    <form class="formulario flex-form">
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo" required>
-        <textarea placeholder="Mensaje"></textarea>
-        <button>Enviar</button>
+    <form class="formulario">
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Describe tu proyecto"></textarea>
+        <button type="submit">Enviar</button>
     </form>
 </section>
 
-<a href="#contacto" class="btn-fixed">✉️</a>
-
-<footer class="footer footer-flex">
-    <div>© 2025</div>
-    <div>Diseño de Almacenes</div>
-    <div class="footer-extra">Versión Responsive</div>
+<footer class="footer">
+    <p>© 2025 | Diseño de Almacenes Logísticos</p>
 </footer>
 
 </body>
 </html>
+
 
