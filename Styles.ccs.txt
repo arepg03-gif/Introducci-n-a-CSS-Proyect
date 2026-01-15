@@ -9,6 +9,7 @@ body {
     color: #1e293b;
 }
 
+/* ---------- BASE ---------- */
 .header {
     text-align: center;
     padding: 40px;
@@ -16,17 +17,17 @@ body {
     color: white;
 }
 
-/* STICKY */
+.banner-responsive {
+    display: none;
+    background: #e2e8f0;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
 .nav-sticky {
     position: sticky;
     top: 0;
-    z-index: 100;
-}
-
-.section {
-    padding: 40px;
-    max-width: 1100px;
-    margin: auto;
 }
 
 .flex-menu {
@@ -42,17 +43,20 @@ body {
     text-decoration: none;
 }
 
+.section {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
 .flex-servicios,
-.flex-portafolio {
+.metricas-flex {
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-/* RELATIVE */
-.servicio-pos {
-    position: relative;
+.servicio {
     background: #e2e8f0;
     padding: 30px;
     border-radius: 10px;
@@ -60,51 +64,14 @@ body {
     text-align: center;
 }
 
-/* ABSOLUTE */
-.badge {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background: #0f172a;
-    color: white;
-    padding: 4px 8px;
-    font-size: 0.7rem;
-    border-radius: 5px;
-}
-
-.flex-areas {
+.flex-form {
     display: flex;
+    flex-direction: column;
     gap: 15px;
+    max-width: 400px;
+    margin: auto;
 }
 
-.metricas-flex {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-
-/* RELATIVE */
-.pos-relative {
-    position: relative;
-}
-
-.portfolio-item img {
-    width: 250px;
-    border-radius: 10px;
-}
-
-/* ABSOLUTE */
-.etiqueta {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: rgba(15,23,42,0.8);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-/* FIXED */
 .btn-fixed {
     position: fixed;
     bottom: 20px;
@@ -114,7 +81,6 @@ body {
     padding: 15px;
     border-radius: 50%;
     text-decoration: none;
-    font-size: 1.2rem;
 }
 
 .footer-flex {
@@ -124,3 +90,65 @@ body {
     color: white;
     padding: 20px;
 }
+
+.texto-movil {
+    display: none;
+}
+
+/* ---------- TABLET ---------- */
+@media (max-width: 1024px) {
+    .flex-servicios,
+    .metricas-flex {
+        flex-wrap: wrap;
+    }
+}
+
+/* ---------- MÓVIL ---------- */
+@media (max-width: 768px) {
+    .banner-responsive {
+        display: block;
+    }
+
+    .flex-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-servicios,
+    .metricas-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .texto-desktop {
+        display: none;
+    }
+
+    .texto-movil {
+        display: block;
+    }
+}
+
+/* ---------- MÓVIL PEQUEÑO ---------- */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .servicio {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    .btn-fixed {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
