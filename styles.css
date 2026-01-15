@@ -1,46 +1,120 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Diseño de Almacenes Logísticos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-    <!-- Enlaza tu CSS aquí -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
-</head>
-<body>
+body {
+    background: #f8fafc;
+    color: #1e293b;
+}
 
-    <!-- HEADER -->
-    <header class="header">
-        <h1>Diseño de Almacenes Logísticos</h1>
-        <p>Optimización de layouts, flujos y operaciones</p>
-    </header>
+.header {
+    text-align: center;
+    padding: 40px;
+    background: #0f172a;
+    color: white;
+}
 
-    <!-- MENU -->
-    <nav class="menu">
-        <a href="#sobre-mi">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#areas">Especialización</a>
-        <a href="#portafolio">Portafolio</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+.section {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
 
-    <!-- SOBRE MI -->
-    <section class="section sobre-mi" id="sobre-mi">
-        <img src="img/almacen-principal.jpg" alt="Diseño de almacén logístico">
+.flex-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #1e293b;
+    padding: 15px;
+    flex-wrap: wrap;
+}
 
-        <p class="frase">
-            Transformo espacios en flujos logísticos eficientes
-        </p>
+.flex-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        <p class="impacto">
-            Soy especialista en diseño de almacenes logísticos y optimización
-            de operaciones. Desarrollo layouts que mejoran la productividad,
-            reducen recorridos y elevan la seguridad del personal.
-        </p>
+.sobre-mi img {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
 
-        <p class="impacto">
-            Un diseño de almacén bien planificado impacta directamente
-            en costos, tiempos de operación y capacidad de crecimiento.
-        </p>
-    </
+.flex-servicios {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicio {
+    background: #e2e8f0;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 220px;
+    text-align: center;
+}
+
+.flex-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.flex-areas details {
+    flex: 1 1 250px;
+    background: #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.flex-portafolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.flex-form input,
+.flex-form textarea {
+    padding: 10px;
+}
+
+button {
+    background: #0f172a;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: white;
+}
